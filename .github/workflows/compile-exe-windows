@@ -1,0 +1,27 @@
+name: Create executable for Windows
+
+"on":
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Dart SDK
+        uses: dart-lang/setup-dart@v1.3
+
+      - name: Install dependencies
+        run: dart pub get
+
+      - name: Dart compile exe for Windows
+        run: dart compile exe .\bin\dart_captive_portal_login.dart
+
+      - name: Upload the installer as an artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: generated executable (Windows)
+          path: "bin/dart_captive_portal_login.exe"

@@ -1,14 +1,14 @@
 ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+[![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/iqfareez/dart_captive_portal_login/actions/workflows/compile-exe-windows.yml)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
 # Captive Portal Wi-Fi login using Dart
 
-Creating a Windows shortcut to quickly log in to the wifi captive portal. See article: https://iqfareez.com/blog/hacking-wifi-captive-portal-2
+Creating a Windows executable file (.exe) to quickly log in to the wifi captive portal. See article: https://iqfareez.com/blog/hacking-wifi-captive-portal-2
 
 ## Usage
 
-#### Using template
+### Using template
 
 1. Click on **Use this template** button.
 1. Give any name you want for the repo.
@@ -29,18 +29,24 @@ Note that the following field defaults for IIUM Gombak Wifi captive portal login
    - **`kLoginData`**: The fields data to be send to the URL (eg: username, command etc.)
 
 1. Commit all the modified files
+1. Go back to your repository page.
 
 ### Generate executable
 
-There are to approaches to build the executable. Locally (if you have Dart SDK already installed) and remote.
+There are two approaches to build the executable. Locally (if you have Dart SDK already installed) and remote.
 
 #### Local build
 
 1. Clone your modified repo into your machine
 1. Open terminal and run `dart compile exe .\bin\dart_captive_portal_login.dart`
 
-#### Remote build
+#### Remote build (easier)
 
-1. Go to GitHub action page.
+Go to the GitHub action page.
+
 1. Find the workflow named **Create executable for Windows**, click the run workflow button.
-1. After the build finish, you can download your executable from the **artifacts** section.
+1. After the build finish, download the **generated artifacts**.
+   ![Download artifacts from GitHub actions](https://imgur.com/1s6hC22.png)
+1. Unzip the file and you'll get the `.exe` file.
+
+Thank you. Happy Hacking!

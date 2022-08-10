@@ -8,11 +8,17 @@ Creating a Windows shortcut to quickly log in to the wifi captive portal. See ar
 
 ## Usage
 
-Note that the following field is defaulted for IIUM Gombak Wifi captive portal login. Please modify accordingly.
+#### Using template
+
+1. Click on **Use this template** button.
+1. Give any name you want for the repo.
+1. Choose the private repository (as you don't want your username and password getting exposed in the public)
+1. Click on **Create repository** button.
 
 ### Modify fields
 
-1. Create public repo template
+Note that the following field defaults for IIUM Gombak Wifi captive portal login. Please modify accordingly.
+
 1. Click <kbd>.</kbd> to open an online editor.
 1. Open the `bin/dart_captive_portal_login.dart` file.
 1. Change the constants accordingly.

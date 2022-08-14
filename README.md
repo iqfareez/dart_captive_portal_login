@@ -11,9 +11,9 @@ Creating a Windows executable file (.exe) to quickly log in to the wifi captive 
 ### Using template
 
 1. Click on **Use this template** button.
-1. Give any name you want for the repo.
-1. Choose the private repository (as you don't want your username and password getting exposed in the public)
-1. Click on **Create repository** button.
+1. Give any name you want for the repository.
+1. Select **Private**. (as you don't want your username and password getting exposed to the public)
+1. Finally, click **Create repository from template** button.
 
 ### Modify fields
 
@@ -26,10 +26,12 @@ Note that the following field defaults for IIUM Gombak Wifi captive portal login
    - **`kUsername`**: Your username / matric number
    - **`kPassword`**: Your password
    - **`kLoginUrl`**: URL to send the login request
-   - **`kLoginData`**: The fields data to be send to the URL (eg: username, command etc.)
+   - **`kLoginData`**: The fields data to be sent to the URL (eg: username, command etc.)
 
-1. Commit all the modified files
+1. From the sidebar, click the **Source control** icon. Enter any commit message and click **Commit and Push**.
 1. Go back to your repository page.
+
+> Alternatively, you can clone the repository to edit the files locally.
 
 ### Generate executable
 
@@ -37,12 +39,11 @@ There are two approaches to build the executable. Locally (if you have Dart SDK 
 
 #### Local build
 
-1. Clone your modified repo into your machine
 1. Open terminal and run `dart compile exe .\bin\dart_captive_portal_login.dart`
 
 #### Remote build (easier)
 
-Go to the GitHub action page.
+Go to the [GitHub action](https://github.com/iqfareez/dart_captive_portal_login/actions) page.
 
 1. Find the workflow named **Create executable for Windows**, click the run workflow button.
 1. After the build finish, download the **generated artifacts**.

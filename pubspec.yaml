@@ -2,14 +2,12 @@ name: dart_captive_portal_login
 description: Captive portal login shortcut
 version: 1.0.0
 # homepage: https://www.example.com
+repository: https://github.com/iqfareez/dart_captive_portal_login
 
 environment:
   sdk: ">=2.17.6 <3.0.0"
 
-# dependencies:
-#   path: ^1.8.0
-
 dev_dependencies:
-  lints: ^2.0.0
+  lints: ^6.0.0
   test: ^1.16.0
-dependencies: { http: ^0.13.5 }
+dependencies: { http: ^1.4.0 }

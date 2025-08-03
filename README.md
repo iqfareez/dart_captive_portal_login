@@ -47,7 +47,7 @@ Go to the [GitHub Actions](https://github.com/iqfareez/dart_captive_portal_login
 
 1. Find the workflow named **Create executable for Windows** and click the **Run workflow** button.
 2. After the build finishes, download the **generated artifacts**.
-   ![Download artifacts from GitHub Actions](https://imgur.com/1s6hC22.png)
-3. Unzip the file and you'll get the `.exe` file.
+   <img width="1474" height="814" alt="image" src="https://github.com/user-attachments/assets/30d937b1-74d3-46c8-a905-d19f926f8337" />
+4. Unzip the file and you'll get the `.exe` file.
 
 Thank you. Happy hacking!
